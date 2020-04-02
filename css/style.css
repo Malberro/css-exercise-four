@@ -1,4 +1,72 @@
-body {
-  background-color: #dadada;
-  font-size: 10px;
+*, *:before, *:after {
+  box-sizing: border-box;
 }
+
+body {
+  font-size: 16px;
+  background-color: #dadada;
+}
+
+h1 {
+  height: 40px;
+  font-family: sans-serif;
+  font-size: 100%;
+  padding-top: 10pt;
+  padding-left: 10pt;
+}
+
+.emphasis {
+  color: black;
+  font-family: sans-serif;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.preview {
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+}
+
+.baku {
+  background-image: url("../images/baku.jpg");
+}
+
+.london {
+  background-image: url("../images/london.png");
+}
+
+.madrid {
+  background-image: url("../images/madrid.jpg");
+}
+
+.rome {
+  background-image: url("../images/rome.jpg");
+}
+
+/* Container holding the image and the text */
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+/* code added to create two-column design */
+@media screen and (min-width: 575px){
+  .preview {
+    margin: 1%;
+    width: 48%;
+    display: inline-block;
+    float: left;
+}
+
+/* code added to create four-column design */
+  @media screen and (min-width: 991px){
+    .preview {
+      margin: 1%;
+      width: 20%;
+      display: inline-block;
+    }
